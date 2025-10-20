@@ -804,7 +804,7 @@ const ExcellaRoadmap = () => {
     }
   ];
 
-  const getStatusIcon = (phaseId:any) => {
+  const getStatusIcon = (phaseId: string) => {
     if (phaseId === 'phase1') return <Clock className="w-5 h-5" />;
     return <Circle className="w-5 h-5" />;
   };
@@ -860,7 +860,7 @@ const ExcellaRoadmap = () => {
 
         {/* Roadmap Phases */}
         <div className="space-y-6">
-          {roadmap.map((phase, phaseIndex) => (
+          {roadmap.map((phase) => (
             <div key={phase.id} className="bg-slate-800 rounded-xl border border-slate-700 overflow-hidden">
               {/* Phase Header */}
               <div
@@ -1022,7 +1022,7 @@ const ExcellaRoadmap = () => {
                   All 10 services extracted. Ready to scale to 100+ schools.
                 </p>
                 <p className="text-yellow-300 text-sm">
-                  🎯 Achievement: You've built a real SaaS platform. Time to scale aggressively.
+                  🎯 Achievement: You&apos;ve built a real SaaS platform. Time to scale aggressively.
                 </p>
               </div>
             </div>
@@ -1033,7 +1033,7 @@ const ExcellaRoadmap = () => {
         <div className="mt-12 bg-gradient-to-r from-red-900/50 to-orange-900/50 rounded-xl p-8 border border-red-700">
           <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
             <AlertCircle className="w-8 h-8 text-red-400" />
-            Critical Success Factors (Don't Skip These!)
+            Critical Success Factors (Don&apos;t Skip These!)
           </h2>
           
           <div className="grid md:grid-cols-2 gap-6">
@@ -1042,7 +1042,7 @@ const ExcellaRoadmap = () => {
               <ul className="space-y-2 text-slate-300">
                 <li>• MUST test tenant isolation thoroughly - one bug affects all schools</li>
                 <li>• MUST get billing working - no revenue = dead project</li>
-                <li>• MUST onboard real schools early - don't build in vacuum</li>
+                <li>• MUST onboard real schools early - don&apos;t build in vacuum</li>
                 <li>• MUST set up basic monitoring - you need to know when things break</li>
               </ul>
             </div>
