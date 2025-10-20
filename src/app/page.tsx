@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import { CheckCircle, Circle, Clock, DollarSign, Users, Zap, AlertCircle, TrendingUp } from 'lucide-react';
 
