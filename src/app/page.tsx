@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { CheckCircle, Circle, Clock, DollarSign, Users, Zap, AlertCircle, TrendingUp } from 'lucide-react';
 
 const ExcellaRoadmap = () => {
@@ -824,6 +825,11 @@ const ExcellaRoadmap = () => {
           <p className="text-slate-300 text-lg mb-6">
             Your complete journey: Monolith → Multi-Tenant SaaS → Microservices
           </p>
+          <div className="mb-6">
+            <Link href="/remaining-devops" className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-semibold">
+              View Remaining DevOps Tasks
+            </Link>
+          </div>
           
           {/* Summary Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
